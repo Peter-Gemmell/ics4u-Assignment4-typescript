@@ -1,9 +1,9 @@
 /*
  * This program ...
  *
- * @author  Malcolm Tompkins
+ * @author  Peter Gemmell
  * @version 1.0
- * @since   2021-01-02
+ * @since   
  */
 
 'use strict'
