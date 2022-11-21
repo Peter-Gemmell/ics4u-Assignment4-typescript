@@ -3,17 +3,15 @@
  *
  * @author  Peter Gemmell
  * @version 1.0
- * @since   
+ * @since
  */
-
-'use strict'
 
 import promptSync from 'prompt-sync'
 const prompt = promptSync()
 
 /**
  *
- * Function of BinarySearch
+ * Function of Hourglass
  *
  * @param {number} integer number of disks
  * @param {number} spacesNum first peg
@@ -44,9 +42,9 @@ try {
 
   if (isNaN(inputNum)) {
     console.log('This is not a number.')
-  } else {
-    asteristics(inputNum)
-  }
+  } else if (inputNum <= 0) {
+    console.log('This is not an integer')
+  } else asteristics(inputNum)
 } catch (e) {
   console.log('\nThis is not a number')
 }
