@@ -16,8 +16,8 @@ const prompt = promptSync()
  * @param {number} integer number of disks
  * @param {number} spacesNum first peg
  */
-function asteristics(integer: number, spacesNum: number = 0) {
-  // Generate asteristics.
+function asterisk(integer: number, spacesNum: number = 0) {
+  // Generate asterisk.
   let output: string = ''
 
   for (let counter: number = 0; counter < spacesNum; counter++) {
@@ -31,7 +31,7 @@ function asteristics(integer: number, spacesNum: number = 0) {
   console.log(output)
 
   if (integer > 1) {
-    asteristics(integer - 1, spacesNum + 1)
+    asterisk(integer - 1, spacesNum + 1)
   }
   console.log(output)
 }
@@ -44,7 +44,7 @@ try {
     console.log('This is not a number.')
   } else if (inputNum <= 0) {
     console.log('This is not an integer')
-  } else asteristics(inputNum)
+  } else asterisk(inputNum)
 } catch (e) {
   console.log('\nThis is not a number')
 }
